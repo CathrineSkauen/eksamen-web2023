@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--generell meta data-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="our company is one of the best et iusto odio dignissimos ducimus qui blanditiis praesentium"> <!--tilfeldig tekst siden nettsiden er fylt med placeholders-->
+    <meta name="author" content="Cathrine Skauen">
+    <!--slutt-->
+    <!--opengraph meta-->
+    <meta property="og:title" content="About Compeling Headline">
+    <meta property="og:image" content="https://placehold.co/400"> <!--placeholder, hadde valgt spesifikt bilde til siden-->
+    <meta property="og:type" content="website">
+        <!--slutt-->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="css/font/css/fontawesome.css" rel="stylesheet">
+    <link href="css/font/css/brands.css" rel="stylesheet">
+    <link href="css/font/css/solid.css" rel="stylesheet">
+    <link rel="icon" href="img/ressurser/logo1.png" type="image/x-icon">
+    <title>About Compeling Headline</title>
+
+</head>
+<body>
+    <div id="grid-container">
+        
+        <header role="banner">
+            <nav id="nav" role="navigation">
+                <a class="logo" href="index.html" title="Visit our homepage" aria-label="Company Logo">
+                    <img src="img/ressurser/logo1.png" alt="bilde av logoen" > <!--Denne alt attributten er pynt, fordi den ikke har noe spesielt å beskrive-->
+                </a>
+                <section id="navbar">
+
+                <a id="home" href="index.html" title="Visit our homepage" aria-label="Homepage link">Home</a>
+                <a href="products.html" title="View Our Portfolio" aria-label="Portfolioside link">Portfolio</a>
+                <a href="about.html" class="active" title="Learn About Us" aria-label="aboutpage link">About</a>
+                <a id="contact" href="about.html#contact-section" title="Get in Touch" aria-label="contact section link">Contact</a>
+
+                </section>
+            </nav>
+
+                <section class="header-area-about">
+                    <section class="header-video-img-about">
+            
+                    <img id="header-img-about" src="img/abouthtml-img.jpg" alt="a phone laying on top of a notebook" title="Image of a persons phone covering their notebook"> <!--Denne alt attributten er content fordi den beskriver hva som skjer i bildet-->
+                </section>
+                
+                    <article class="company-name-article" role="article">
+                        <h1>Company name</h1>
+                        <h2>About our company</h2>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+                        <a id="read-more-services" href="about.html#contact-section" aria-label="get in touch with us">Get in touch with us</a>
+                        </article>
+                
+                        </section>
+                        </header>
+
+                        <main class="main-about" role="main">
+                        <section id="services-about">
+                            <h3 id="our-services">Our services</h3>
+            
+                            <article role="article">
+                            <a href="#" aria-label="Branding">
+                            <i class="fa-solid fa-users"></i>
+                            </a>
+                            <h4>Branding</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </article>
+            
+                            <article role="article">
+                            <a href="#" aria-label="Designs">
+                                <i class="fa-solid fa-cloud-arrow-up"></i>
+                            </a>
+                            <h4>Designs</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>                
+                            </article>
+            
+                            <article role="article">
+                                <a href="#" aria-label="Development">
+                                <i class="fa-solid fa-code"></i>
+                                </a>
+                            <h4>Development</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>                
+                            </article>
+            
+                            <article role="article">
+                                <a href="#" aria-label="support">
+                                <i class="fa-solid fa-wifi"></i>
+                                </a>
+                            <h4>Support</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>                
+                            </article>
+                        </section>
+
+                        <section class="clients">
+                        <h5>Some of our clients</h5>
+                        <img src="img/ressurser/logo1.png" alt="en klient"> <!--Disse 3 alt attributtene er pynt, fordi de ikke et bilde å beskrive. Kun bilde av logo uten noen handling.-->
+                        <img src="img/ressurser/logo2.png" alt="annen klient">
+                        <img src="img/ressurser/logo3.png" alt="en tredje klient">
+                        </section>
+
+                    
+                            <section class="contact-us" id="contact-section">
+                            <h5>Contact us</h5>
+                            <section class="contact-us-section">
+                            
+                            <section class="send-us-a-message">
+                            <h6>Send us a message</h6>    
+                            <form>
+
+                            <label for="name" aria-label="your name">Name</label>
+                            <input id="name" type="text" placeholder="Ola Normann" title="Enter your name">
+
+                            <label for="subject" aria-label="branding">Branding</label>
+                            <input id="subject" type="text" placeholder="Branding" title="Enter the branding">
+
+                            <label for="message" aria-label="message">Message</label>
+                            <input id="message" type="text" title="Enter your message">
+
+                            </form>
+                            <button type="submit" aria-label="button to send message">Send message</button>
+                            </section>
+                            <section class="contact-info">
+                            <h6>Contact information</h6>
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.</p>
+                            <p><i id="icon-info1" class="fa-solid fa-location-pin" title="Our Office Location"></i>B R A Veien 4, 1757 Halden</p>
+                            <p><i id="icon-info2" class="fa-solid fa-phone" title="Contact Phone Number"></i>69 60 80  00</p>
+                            <p><i id="icon-info3" class="fa-solid fa-envelope" title="Contact Email"></i>
+                                <a href="">postmottak@hiof.no</a></p>
+                            </section>
+                        </section>
+                    </section> 
+                        
+                        <section id="map-section">
+                            <!-- Paste the simplified Google Maps Embed Code here -->
+                            <iframe aria-label="map of our location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.188276543399!2d11.350228377028593!3d59.12925022702018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1701185881155!5m2!1sno!2sno"  height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </section>
+
+                        <a href="about.html#nav" id="back-to-top" aria-label="back to top button"><i class="fa-solid fa-arrow-up"></i></a>
+                    </main>
+                    <footer role="contentinfo">
+                        <a class="logo" href="index.html" title="Visit our homepage" aria-label="homepage link">
+                            <img src="img/ressurser/logo1.png" alt="bilde av logoen" > <!--Denne alt attributten er pynt, fordi den ikke har noe spesielt å beskrive-->
+                        </a>
+                        <h6>Companyrights Companyname 2023</h6>
+                        <section class="media">
+            
+                        
+                        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj4pPDKsueCAxXPKxAIHd0zBxwQFnoECAYQAQ&url=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Dnb_NO&usg=AOvVaw1GIOFJ2xPxk_m49HUL9A9l&opi=89978449" title="Visit our Facebook page" aria-label="Facebook">
+                            <i class="fa-brands fa-square-facebook"></i>
+                        </a>
+                        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjZwf3csueCAxVeLBAIHT9FCxsQFnoECAYQAQ&url=https%3A%2F%2Fwww.instagram.com%2F&usg=AOvVaw1cBeRoOpMhZ3-x5M1sA3Fm&opi=89978449" title="Visit our Instagram page" aria-label="Instagram">
+                            <i class="fa-brands fa-square-instagram"></i>
+                        </a>
+                        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwipnPjlsueCAxXmHhAIHTIqBB0QFnoECAgQAQ&url=https%3A%2F%2Fno.linkedin.com%2F&usg=AOvVaw0_Lwd85oLODVAigbalMEc5&opi=89978449" title="Visit our Linkedin page" aria-label="Linkedin">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        </section>
+                    </footer>
+
+
+        </div>           
+          
+        </body></html>

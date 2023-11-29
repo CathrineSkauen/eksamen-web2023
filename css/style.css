@@ -1,0 +1,749 @@
+/* Import Roboto fra Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/*Setter font for sidene og maks bredde på 1600px*/
+body{
+    font-family: 'Roboto', sans-serif;
+    max-width: 1600px;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+/*Setter 3 kolonner i grid på desktop*/
+#grid-container {
+    display: grid;
+    grid-template-areas: 
+    "header header header" 
+    "main main main" 
+    "footer footer footer";
+}
+
+/*gjør articles sentrert*/
+#grid-container article{
+    align-items: center;
+}
+
+header {
+    grid-area: header; /*setter grid-area header*/
+}
+
+/*Styler nav*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    font-size: 18px;
+}
+
+.logo img {
+    max-height: 100px; 
+}
+
+#navbar a{
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+}
+/*Når aktiv på siden, understrek med gult*/
+#navbar a.active {
+    text-decoration: underline; 
+    font-weight: bold;
+    text-decoration-color: #e6bd43;
+}
+
+/*Når hover, vil bakgrunnen bli svart, og skrifta gul*/
+#contact:hover {
+    background-color: #252525; 
+    color: #e6bd43; 
+}
+
+#contact{
+    background-color: #e6bd43;
+    padding: 2rem;
+    font-weight: bold;
+}
+
+/*Styler resten av headeren*/
+.header-video-img {
+    opacity:0.5;
+}
+
+/*fjerner forside img fra desktop*/
+#forside-img {
+    display: none;
+}
+
+/*bredde/høyde for video*/
+#video-img {
+    width: 100%;
+    height: auto;
+}
+
+/*passer på at header videoen ikke går forbi header*/
+.header-area {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden; 
+}
+
+/*Plasserer .headline midt på headline*/
+.headline {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    text-align: center; 
+}   
+
+.headline h1 {
+    font-size: 50px;
+}
+
+.headline p {
+    font-size: 18px;
+}
+
+/*Styler a til å ha gul bakgrunn*/
+.headline a{
+    text-decoration: none;
+    color: black;
+    background-color: #e6bd43;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+/*Når hover, vil bakgrunnen bli svart, og skrifta gul*/
+.headline #read-more-services:hover {
+    background-color: #252525; 
+    color: #e6bd43; 
+}
+
+/*Bestemmer grid område, main*/
+.main-index{
+    grid-area: main;
+    position: relative;
+}
+/*h2 og p blir under hverandre, og styley*/
+.engaging-subheading{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    max-width: 800px;
+}
+
+.engaging-subheading h2{
+    font-size: 45px;
+}
+
+.engaging-subheading p{
+    font-size: 18px;
+}
+
+/*Flex-row slik at bildet blir på venstre*/
+.about{
+    display: flex;
+    background-color: #e6bd43;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+/*Flex-column slik at span a p er under hverandre*/
+.about-info{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.about span{
+    border: 3px solid black;  /*svart border rundt "read more about us"*/
+    padding: 0.5rem; 
+
+}
+.about a{
+    text-decoration: none;    
+    color: black; 
+}
+
+.about p{
+    padding-bottom:1rem;    
+}
+
+/*Når hover, vil bakgrunnen bli svart, og skrifta gul*/
+.about span:hover{
+    background-color: #252525; 
+    color: #e6bd43; 
+}
+
+/*Flex-row slik at articles er i rad og styling*/
+#services {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /*mindre skjerm, legges under hverandre*/
+    padding: 1rem;
+    justify-content: space-around; /*likt mellomrom rundt articles*/
+    text-align: center;
+    margin-right: 4rem;
+    margin-left: 4rem;
+}
+
+#services h4 {   
+    width: 100%; /*på egen linje*/
+    font-size: 40px; 
+    text-align: center; /*midtstillt*/
+    font-weight: bold; /*fetere skrift*/
+}
+
+#services h5{
+    font-size: 20px; /*gjør ikonene større*/
+    text-align: center; /*gjør de midtstillt*/
+    font-weight: bold;
+}
+
+#services article {
+    max-width: 200px; /*maks bredde på articles, */
+    padding: 1rem;
+}
+
+/*styler a*/
+#services a{
+    text-decoration:none; /*tar vekk default dekorasjoner*/
+    color: black;
+    font-size: 30px;
+}
+
+.sign-up{
+    flex-direction: column; /*h5 og sign up bar under hverandre*/
+    text-align: center;
+    background-color:rgba(229, 229, 229, 0.959);
+    padding: 1rem;
+
+}
+
+.sign-up h5{
+    font-size: 40px;
+}
+
+.sign-up input{
+    font-size: 20px;
+    padding: 1rem;
+    border: none;
+}
+
+.sign-up button{
+    padding: 1rem;
+    background-color: #e6bd43;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+}
+.sign-up button:hover{
+    background-color: #252525;
+    color: #e6bd43;
+}
+
+/*midtstillt*/
+.sign-up form{
+    display: flex;
+    justify-content: center;
+}
+
+
+/*back to top styling*/
+#back-to-top {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    background-color: #252525;
+    font-size: 40px;
+    color: #fff;
+    border: 3px solid #252525;
+    border-radius: 0.5rem;
+  }
+
+
+/*styling av footer*/
+footer{
+    display: flex; /*får elementene i en rad*/
+    grid-area: footer; /*setter grid area til footer*/
+    background-color:#252525;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+
+footer h6{
+    justify-content: center;
+    color: #fff;
+    flex:1;
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal; 
+}
+footer a{
+    font-size: 40px; /*gjør ikonene større*/
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+}
+
+
+
+
+/*portfolio*/
+/*størrelse  til header bildet på alle sidene*/
+#header-img {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    min-width: 350px;
+    object-fit: cover; 
+
+}
+
+/*setter grid area til main*/
+.main-portfolio{
+    grid-area: main;
+    padding: 2rem;
+}
+
+
+/*branding, design, development meny styling*/
+.main-portfolio ul{
+    display: flex;
+    list-style: none;
+    width: 20%;
+    margin-left: 0;
+    padding-left: 0; 
+}
+.main-portfolio li{
+    padding-right: 1rem;
+}
+#menu-page a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 0.5rem;
+}
+
+/*Når hover, vil bakgrunnen bli svart, og skrifta gul*/
+.main-portfolio #menu-page a:hover{
+    background-color: #252525; 
+    color: #e6bd43;
+}
+
+/*overskrifter styling med gul understrek/bottom border*/
+.main-portfolio h2, .main-portfolio h3, .main-portfolio h4, .main-portfolio h5 {
+    font-size: 35px;
+    border-bottom: 5px solid #e6bd43; 
+    padding-bottom: 1rem;
+}
+
+.branding, .design, .development {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.branding article, .design article, .development article {
+    /* Flex-egenskaper for fleksibel størrelse */
+    flex: 1 1 auto;
+    /* Maksimal bredde for artiklene de vil vokse til*/
+    max-width: 692px;
+    min-width: 200px; /*minstebredde*/
+    /* Høyre og venstre margin for å skape plass mellom articles*/
+    margin-right: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+
+}
+
+/*bildene tar opp hele bredden*/
+.branding img,
+.design img,
+.development img {
+    width: 100%;
+    height: auto;
+}
+
+/* Gradvis størrelseøkning*/
+.branding article,
+.design article,
+.development article {
+  transition: transform 1s ease;
+}
+/* Gjør artikkelkortene større når hover */
+.branding article:hover,
+.design article:hover,
+.development article:hover {
+  transform: scale(1.1);
+}
+
+/*about*/
+/*Setter størrelse for headerbildet*/
+.header-area-about img {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    object-fit: cover; /*bilder tilpasser seg*/
+}
+
+/*gir article posisjon og bakgrunnsfarge*/
+.company-name-article {
+    position: absolute;
+    top: 12rem; 
+    left: 70%;
+    transform: translateX(-50%); 
+    text-align: center; 
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;  
+}
+
+/*gjør skriftsstørrelsen mindre kraftig, og mindre størrelse*/
+.company-name-article h1{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+/*mellomrom mellom p og a*/
+.company-name-article p{
+    padding-bottom: 0.5rem;
+}
+
+/*styler a knappen gul*/
+.company-name-article a{
+    text-decoration: none;
+    color: black;
+    background-color: #e6bd43;
+    padding: 1rem;
+    font-weight: bold;
+}
+.company-name-article a:hover{
+    background-color: #252525;
+    color: #e6bd43;
+}
+
+.main-about{
+    grid-area: main;
+}
+
+/*Flex-row slik at articles er i rad og styling*/
+#services-about {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /*mindre skjerm, legges under hverandre*/
+    padding: 1rem;
+    justify-content: space-around; /*likt mellomrom rundt articles*/
+    text-align: center;
+    margin-right: 4rem;
+    margin-left: 4rem;
+}
+
+#services-about h3 {   
+    width: 100%; /*på egen linje*/
+    font-size: 40px; 
+    text-align: center; /*midtstillt*/
+    font-weight: bold; /*fetere skrift*/
+}
+
+#services-about h4{
+    font-size: 20px; /*gjør ikonene større*/
+    text-align: center; /*gjør de midtstillt*/
+    font-weight: bold;
+}
+
+#services-about article {
+    max-width: 200px; /*maks bredde på articles, */
+    padding: 1rem;
+}
+/*styler a*/
+#services-about a{
+    text-decoration:none; /*tar vekk default dekorasjoner*/
+    color: black;
+    font-size: 30px;
+}
+
+.clients h5{
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+.clients{
+    position: relative;
+    flex-direction: column; /*h5 og sign up bar under hverandre*/
+    text-align: center;
+    background-color: #e6bd43;
+    padding: 1rem;
+}
+
+.contact-us {
+    background-color: #efefef; /*bakgrunnsfarge */
+    padding: 1rem; /* Legger til padding rundt seksjonen */
+}
+
+.contact-us h5 {
+    margin: 1rem; 
+    font-size: 30px; 
+    text-align: center; /* Sentrer overskriften */
+}
+
+/* Styler h6 i kontakt oss-seksjonen */
+.contact-us-section h6 {
+    font-size: 20px; 
+    margin-top: 0; /* Fjern toppmargin for h6 */
+}
+
+/* Layouten til kontakt oss-seksjonen */
+.contact-us-section {
+    display: flex; /* Bruk flexbox for layout */
+    flex-direction: row; /* Plasser i en rad/horisontalt*/
+    justify-content: center; /* Sentrer elementene*/
+}
+
+/* Styler containeren "send oss en melding" */
+.send-us-a-message {
+    max-width: 500px; /* Sett maksimal bredde for containeren */
+    width: 100%; /* Ta opp full bredde innenfor maksimumsbredden */
+    padding: 2rem; /* Legg til padding inne i containeren */
+}
+
+/* Styler form*/
+.send-us-a-message form {
+    display: flex; /* Bruk flexbox for skjemalayout */
+    flex-direction: column; /* Plasser vertikalt */
+}
+
+.send-us-a-message label {
+    margin-bottom: 1rem; /* Legg til plass under etikettene */
+}
+
+.send-us-a-message input {
+    margin-bottom: 1rem; /* Legg til plass under skjema-inputene */
+    border: none; /* Fjern rammen rundt inputfeltene */
+    padding: 1rem; /* Legg til padding inne i inputfeltene */
+}
+
+.send-us-a-message button {
+    background-color: #e6bd43; /* Sett bakgrunnsfargen for knappen */
+    border: none; /* Fjern rammen rundt knappen */
+    padding: 1rem; /* Legg til padding inne i knappen */
+    font-weight: bold; /* Sett høyere fontvekten for teksten på knappen */
+}
+.send-us-a-message button:hover {
+    background-color: #252525;
+    color: #e6bd43;
+}
+
+#message {
+    height: 200px; 
+}
+
+/* Styler kontaktinformasjon */
+.contact-info {
+    display: flex; 
+    flex-direction: column; /* Plasser elementer vertikalt */
+    max-width: 500px; /* Sett maksimal bredde for containeren */
+    padding: 2rem; /* Legg til padding inne i containeren */
+    width: 100%; /* Ta opp full bredde innenfor maksimumsbredden */
+}
+
+.contact-info p {
+    text-decoration: none; 
+    color: black; 
+    font-size: 18px; 
+}
+
+/* Ikonene */
+.contact-info #icon-info1,#icon-info2,#icon-info3 {
+    font-size: 20px; /* Sett fontstørrelse for ikonene */
+    padding-right: 1rem; /* Legg til plass til høyre for ikonet */
+    color: rgb(98, 97, 97); /* Fargen for ikonet */
+}
+
+/*gir kartet maksbredde på sidens bredde*/
+#map-section iframe{
+    width: 100%;
+}
+
+/* Mediestørrelsesregel for skjermer som er mindre enn 700px (mobile) */
+@media only screen and (max-width: 700px) {
+
+/* Endrer grid-malen for mindre skjermer til 1 kolonne */
+/* Definerer et grid-container som inneholder header, main og footer */
+#grid-container {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+}
+
+/*Legger menypunktene under hverandre (inkl. logoen)*/
+nav{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+/*legger a taggene under hverandre også*/
+nav a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/*gjemmer videoen for mindre skjermer*/
+#video-img {
+    display: none;
+}
+
+/*display flex slik at bildet vises istedenfor videon*/
+#forside-img {
+    display: flex;
+}
+
+.headline {
+    width: 80%; /* setter bredden til 80% av flexboksen*/
+}
+
+.headline h1{
+    font-size: 30px;
+}
+/*velger bakgrunsfargen gul, slik at den ikke bli svart ved hover lenger*/
+.headline #read-more-services:hover {
+    background-color: #e6bd43; 
+    color: initial; 
+}
+
+/*velger bakgrunsfargen gul, slik at den ikke bli svart ved hover lenger*/
+#contact:hover {
+    background-color: #e6bd43; 
+    color: initial; 
+}
+
+.send-us-a-message button:hover {
+    background-color:#e6bd43 ;
+    color: black;
+}
+
+.about img{
+    max-width: 100%; /*av flexboksen*/
+}
+
+/*legger bildet, h3, p og a under hverandre*/
+.about{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+/*velger bakgrunsfargen gul, slik at den ikke bli svart ved hover lenger*/
+.about span:hover{
+    background-color: #e6bd43; 
+    color: initial;
+}
+
+/*kun dekke 80% av siden*/
+.engaging-subheading h2{
+    font-size: 25px;
+    width: 80%;
+}
+.engaging-subheading{
+    width: 80%;
+    padding-bottom: 1rem;
+}
+
+.sign-up h5{
+    font-size: 20px;
+}
+.sign-up input{
+    font-size: 15px;
+}
+
+.sign-up button:hover {
+    background-color: #e6bd43; /* Dark gray-black */
+    color: initial; 
+}
+
+/*gjør bakgrunnsfargen hvit ved hover, slik at det ikke er noen effekt*/
+.main-portfolio a:hover{
+    background-color: #ffffff; 
+    color: initial;
+}
+  /* hover effekt funker ikke på mobile*/
+  .branding article:hover,
+  .design article:hover,
+  .development article:hover {
+    transform: none; 
+  }
+/*legger article i midten*/
+.company-name-article {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    top: 22rem; 
+    max-height: 700px;
+    width: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    padding: 2rem;
+    text-align: left;  
+}
+.company-name-article a:hover{
+    background-color: #e6bd43;
+    color: black;
+}
+.branding article,
+    .design article,
+    .development article {
+      transition: none;
+      transform: none;
+    }
+/*header tekst størrelse*/
+.header-area-about {
+    position: relative;
+    width: 100%;
+    height: 800px;
+}
+
+/*gir bilde samme størrelse*/
+.header-area-about img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover; 
+}
+
+.contact-us-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    width: 80%; 
+}
+
+.contact-info h6{
+    margin: 0;
+}
+
+/*footer i en kolonne*/
+footer{
+    flex-direction: column;
+}
+
+/*ikonene på en rad*/
+.media{
+    display: flex;
+    flex-direction: row;
+}
+}
+
